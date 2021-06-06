@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Création d'un compte</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}" />
+	</head>
+
+	<body>
+
+  		<!-- Header -->
+		<header id="header">
+			<img src="/static/img/logo.png" alt="Logo du site"/>
+		</header>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+			<!-- Main -->
+			<div id="main">
+				<div class="inner2">
+	  
+					<!-- Section -->
+					<section>
+						<header class="major2">
+							<h3>Bienvenue sur Pixel Factory</h3>
+						</header>
+						<form method="get" >
+							<h4>Ravie de vous compter parmi nous ! </h4>
+							<label for="pseudo">Votre pseudo : <span class="limiteCaracteres">(20 caratères maximum)</span>	</label><br/>
+							<input type="text" id="pseudo" name="pseudo" maxlength="20" required />
+							<span class="message_erreur"> {{content}} </span>
+				
+							<br/>
+				
+							<label for="pass">Votre mot de passe : <span class="limiteCaracteres">(20 caratères maximum)</span></label><br/>
+							<input type="password" id="pass" name="pass" maxlength="20" required />
+							<span class="message_erreur"> {{content2}} </span>
+				
+								<br/>
+							<br/>
+				
+							<input type="submit" value="Creer le compte">
+							<span class="message_erreur"> {{content3}} </span>
+						</form>
+						
+
+						<p class="text_black"> Vous souhaitez finalement vous connecter ?</p>
+						<button name="index" onclick="self.location.href='/connexion'"> Se connecter </button>
+					</section>
+				</div>
+			</div>
+		</div>
+	</body>
+</html> 
+

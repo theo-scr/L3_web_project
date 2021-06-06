@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Règles du jeu</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}" />
+	</head>
+
+
+	<body>
+
+  		<!-- Header -->
+		<header id="header">
+			<img src="/static/img/logo.png" alt="Logo du site"/>
+		</header>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
+
+					<!-- Banner -->
+					<section id="banner">
+						<div class="content">
+							<header>
+								<h1>Règles du jeu</h1>
+								<p>Voici comment jouer à notre version du Pixel Factory.</p>
+							</header>
+							<p>Vous trouverez ci-dessous les informations concernant le but du jeu, le déroulement d'une partie, le calcul du score et afin le déblocage des niveaux.</p>
+						</div>
+						<span class="image">
+							<img src="/static/img/regles.png" alt="regles" /> 
+						</span>
+					</section>
+
+					<!-- Section -->
+					<section>
+						<header class="major">
+							<h3>But du jeu</h3>
+						</header>
+						<div class="content">
+							<p>L’objectif du Pixel factory est de reproduire à l'identique la figure constituée de petites cases. Au début de la partie, la figure s’affichera pendant 15 secondes. Chaque case de votre dessin devra être coloriée de la même couleur que l'image de référence.
+							<strong>Attention !</strong> Si vous perdez 5 parties en 1 heure vous vous retrouverez bloqué pendant 4 heures !</p>
+						</div>
+  					</section>
+
+					<!-- Section -->
+					<section>
+						<header class="major">
+							<h3>Déroulement de la partie</h3>
+						</header>
+						<div class="features">
+							<p>Une fois le niveau choisi (cf paragraphe sur le niveau) la partie se lancera. Le compte à rebours débutera alors et la figure à reproduire s’affichera pendant 15 secondes avant de disparaître. <br/>
+							Une fois la figure disparu se sera à vous de jouer ! </p>
+							<article>
+								<div class="content">
+									<h4>Réaliser votre figure</h4>
+									<p>Vous disposerez de 6 boutons “couleurs” qui permettront de sélectionner la couleur avec laquelle vous souhaitez colorier une case. Pour sélectionner une couleur, il suffit de cliquer sur le petit carré qui lui est associé.<br/>
+									Pour colorier une case vous aurez juste à cliquer sur la case.<br/>
+									Pour enlever la couleur d’une case, il vous faudra re-cliquer sur celle-ci avec la même couleur.</p>
+								</div>
+							</article>
+							<article>
+								<div class="content">
+									<h4>Aide</h4>
+									<p>Le temps d’affichage de la figure de référence était trop court et vous vous ne souvenez plus de la couleur de certaines cases ? <br/>
+									Pas de panique le bouton “Aide” est là pour vous sauver. En cliquant sur ce bouton, la figure à reproduire s’affichera à nouveau pendant un certain temps (en fonction du niveau de la partie). <br/>
+									<strong>Attention !</strong> Utiliser ce bouton vous fera perdre des points, utilisez-le avec modération.</p>
+								</div>
+							</article>
+							<article>
+								<div class="content">
+									<h4>Validation</h4>
+									<p>Vous êtes satisfait de votre prestation et vous souhaitez vérifier si votre dessin est juste ? <br/>
+									Il vous suffira de cliquer sur le bouton “Valider”. <br/>
+									Si votre dessin est incorrect, la partie continue. Dans le cas contraire, vous serez rédirigez vers une page qui vous affichera votre score. <br/>
+									<strong>Attention !</strong> Vous perdrez des points en cas de validation incorrecte. Une fois de plus utilisez ce bouton avec modération !</p>
+								</div>
+							</article>
+							<article>
+								<div class="content">
+									<h4>Temps de réalisation</h4>
+									<p>Vous disposerez d’un certain temps pour réaliser votre figure. Une fois ce délais dépassé, votre partie sera considérée comme perdue. Ce temps est variable en fonction du niveau.</p>
+								</div>
+							</article>
+						</div>
+					</section>
+
+					<!-- Section -->
+					<section>
+						<header class="major">
+							<h3>Score</h3>
+						</header>
+						<div class="content">
+							<p>Comme évoqué dans la partie II, à chaque fin de partie on vous attribuera un score selon votre performance. Ce score sera donc déterminé en fonction du temps que vous avez mis à réaliser une figure, le nombre de fois que vous avez cliqué sur aide, et le nombre de validations incorrectes. <br/>
+							<strong>Attention !</strong> Toutes les parties ayant un score nul (trop de demandes d’aide et/ou de validation incorrecte) seront considérées comme perdues. Il se peut donc très bien que vous réussissiez à reproduire votre figure dans le temps imparti mais que la partie soit  considérée comme un échec.</p>
+						</div>
+	  				</section>
+
+  					<!-- Section -->
+					<section>
+						<header class="major">
+							<h3>Niveau</h3>
+						</header>
+						<div class="features">
+							<p>Notre jeu comporte 4 niveaux avec une difficulté croissante.Chaque niveau est composé de deux figures. Trois éléments sont modifiés selon le niveau: la difficulté de la figure (plus de couleurs et/ou plus de cases à colorier, le temps de réalisation et le temps d'affichage de l'aide.</p>
+							<article>
+								<div class="content">
+									<h4>Déblocage des niveaux supérieurs</h4>
+									<p>Un nouveau joueur aura seulement accès au 1er niveau.<br/> 
+									Pour débloquer le niveau suivant le joueur devra réaliser les deux figures composant le niveau. Comme évoqué dans la partie score, une figure est considérée comme réussie seulement si le score est positif.</p>
+								</div>
+							</article>
+							<article>
+								<div class="content">
+									<h4>Choix du niveau</h4>
+									<p>A chaque début de partie, vous aurez la possibilité de choisir le niveau.<br>
+									Si vous sélectionnez un niveau auquel vous n’avez pas accès, la partie ne débutera pas et un message d'erreur apparaîtra.</p>
+								</div>
+							</article>
+							<article>
+								<div class="content">
+									<h4>Sélection de la figure</h4>
+									<p>Le choix entre les 2 figures pour un niveau est fait aléatoirement (sauf si vous avez déjà réalisé une figure sur les deux, automatiquement la figure non réalisée se lancera).</p>
+								</div>
+							</article>
+							<article>
+								<div class="content">
+									<h4> Niveau supplémentaire ? </h4>
+									<p>  Si vous êtes arrivés au niveau quatre et que souhaitez vous tester à des figures et niveaux encore plus durs, n'hésitez pas à nous le faire savoir </p>
+								</div>
+							</article>
+						</div>
+					</section>
+				</div>
+			</div>
+
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<div class="inner">
+			
+					<!-- Menu -->
+					<nav id="menu">
+						<header class="major">
+							<h2>Menu</h2>
+						</header>
+						<ul>
+							<li><a href="/accueil">Accueil</a></li>
+							<li><a href="/niveau">Jouer une partie</a></li>
+							<li><a href="/highscore">Highscore</a></li>
+							<li><a href="/choixPartie">Revoir une partie</a></li>
+							<li>
+								<span class="opener">Aide</span>
+								<ul>
+									<li><a href="/regles">Règles du jeu</a></li>
+									<li><a href="/contact">Contact</a></li>
+								</ul>
+							</li>								
+						</ul>
+					</nav>
+			
+					<!-- Section -->
+					<section>
+						<header class="major">
+							<h2>A propos</h2>
+						</header>
+						<aside>	<em> Projet L3 SID. </em> <br/>
+						L'<em>objectif</em> était de réaliser un site web en manipulant des données stockées dans une base de données Oracle. <br/>
+						<em>Sujet</em>: PIXEL Factory. <br/>
+						<em>Outils:</em> 
+							<ul>
+								<li>SGBD : Oracle</li>
+								<li>Serveur Python Flask</li>
+								<li>Langage côté serveur: Python - API Flask</li>
+								<li>Langage côté client: Javascript (ES5), HTML 5, CSS</li>
+								<li>Librairie Javascript: JQuery</li>
+								<li>Navigateur: Firefox</li>
+							</ul>
+						</aside>
+					</section>
+			
+			
+					<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Untitled. All rights reserved. Théo Saccareau & Stévan Scricot. </p>
+					</footer>
+				
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+

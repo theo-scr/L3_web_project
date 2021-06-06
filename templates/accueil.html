@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Accueil</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}" />
+	</head>
+
+
+	<body>
+
+  		<!-- Header -->
+		<header id="header">
+			<img src="/static/img/logo.png" alt="Logo du site"/>
+		</header>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
+
+					<!-- Banner -->
+					<section id="banner">
+						<div class="content">
+							<header>
+								<h1> Accueil </h1>
+								<p> Bienvenue sur notre site. </p>
+							</header>
+
+							<p> Vous trouverez ci-dessous la liste des différentes actions que vous pouvez réaliser sur notre site. </p>
+						</div>
+					</section>
+
+
+					<!-- Section -->
+					<section>
+						<header class="major">
+							<h3> Que souhaitez-vous faire ? </h3>
+						</header>
+
+							<ul>
+								<li>C'est votre première visite sur notre site ? -> Rendez-vous dans l'onglet "Règles du jeu" (dans le sous-menu "Aide") pour tout connaître sur le Pixel Factory. </li>
+								<li>Impatient de commencer une nouvelle partie ? -> Cliquez sur l'onglet "Jouer une partie". N'attendez plus.</li>
+								<li>Vous souhaitez connaître votre niveau et vous situez par rapport aux meilleurs joueurs ? -> Vous trouverez dans l'onglet "Highscores" votre bonheur.</li>
+								<li>Votre dernière partie était mémorable ? -> Grâce à l'onglet "Revoir une partie" vous pourrez la revoir autant de fois que vous le souhaitez.</li>
+								<li>Une question ? Besoin d'aide ? -> Contactez-nous via l'onglet "Contact"</li>
+								<li>Vous souhaitez vous déconnecter ? -> Rendez-vous un peu plus bas.</li>
+							</ul>
+					</section>
+
+					<!-- Section -->
+					<section>
+						<header class="major">
+							<h3> Déconnexion </h3>
+						</header>
+							<p> En espérant vous revoir bientôt ! </p>
+							<button name="Se déconnecter" onclick="self.location.href='/'"> Se déconnecter </button>
+					</section>
+
+				</div>
+			</div>
+
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<div class="inner">
+			
+					<!-- Menu -->
+					<nav id="menu">
+						<header class="major">
+							<h2>Menu</h2>
+						</header>
+						<ul>
+							<li><a href="/accueil">Accueil</a></li>
+							<li><a href="/niveau">Jouer une partie</a></li>
+							<li><a href="/highscore">Highscore</a></li>
+							<li><a href="/choixPartie">Revoir une partie</a></li>
+							<li>
+								<span class="opener">Aide</span>
+								<ul>
+									<li><a href="/regles">Règles du jeu</a></li>
+									<li><a href="/contact">Contact</a></li>
+								</ul>
+							</li>								
+						</ul>
+					</nav>
+			
+					<!-- Section -->
+					<section>
+						<header class="major">
+							<h2>A propos</h2>
+						</header>
+						<aside>	<em> Projet L3 SID. </em> <br/>
+						L'<em>objectif</em> était de réaliser un site web en manipulant des données stockées dans une base de données Oracle. <br/>
+						<em>Sujet</em>: PIXEL Factory. <br/>
+						<em>Outils:</em> 
+							<ul>
+								<li>SGBD : Oracle</li>
+								<li>Serveur Python Flask</li>
+								<li>Langage côté serveur: Python - API Flask</li>
+								<li>Langage côté client: Javascript (ES5), HTML 5, CSS</li>
+								<li>Librairie Javascript: JQuery</li>
+								<li>Navigateur: Firefox</li>
+							</ul>
+						</aside>
+					</section>
+			
+			
+					<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Untitled. All rights reserved. Théo Saccareau & Stévan Scricot. </p>
+					</footer>
+				
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

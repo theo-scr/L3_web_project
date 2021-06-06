@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Choix de la partie à revoir</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}" />
+	</head>
+
+
+	<body>
+
+  		<!-- Header -->
+		<header id="header">
+			<img src="/static/img/logo.png" alt="Logo du site"/>
+		</header>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
+
+					<!-- Banner -->
+					<section id="banner">
+						<div class="content">
+							<header>
+								<h1> Choix de la partie </h1>
+							</header>
+							<p> Avant de revoir une partie, veuillez choisir laquelle vous aimeriez revoir. </p>
+						</div>
+					</section>
+
+					<!-- Section -->
+					<section>
+						<header class="major">
+							<h3>Quelle partie souhaitez-vous revoir ? </h3>
+						</header>
+						{{content}}
+					</section>
+				</div>
+			</div>
+	
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<div class="inner">
+			
+					<!-- Menu -->
+					<nav id="menu">
+						<header class="major">
+							<h2>Menu</h2>
+						</header>
+						<ul>
+							<li><a href="/accueil">Accueil</a></li>
+							<li><a href="/niveau">Jouer une partie</a></li>
+							<li><a href="/highscore">Highscore</a></li>
+							<li><a href="/replay">Revoir une partie</a></li>
+							<li>
+								<span class="opener">Aide</span>
+								<ul>
+									<li><a href="/regles">Règles du jeu</a></li>
+									<li><a href="/contact">Contact</a></li>
+								</ul>
+							</li>								
+						</ul>
+					</nav>
+			
+					<!-- Section -->
+					<section>
+						<header class="major">
+							<h2>A propos</h2>
+						</header>
+						<aside>	<em> Projet L3 SID. </em> <br/>
+						L'<em>objectif</em> était de réaliser un site web en manipulant des données stockées dans une base de données Oracle. <br/>
+						<em>Sujet</em>: PIXEL Factory. <br/>
+						<em>Outils:</em> 
+							<ul>
+								<li>SGBD : Oracle</li>
+								<li>Serveur Python Flask</li>
+								<li>Langage côté serveur: Python - API Flask</li>
+								<li>Langage côté client: Javascript (ES5), HTML 5, CSS</li>
+								<li>Librairie Javascript: JQuery</li>
+								<li>Navigateur: Firefox</li>
+							</ul>
+						</aside>
+					</section>
+			
+			
+					<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Untitled. All rights reserved. Théo Saccareau & Stévan Scricot. </p>
+					</footer>
+				
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

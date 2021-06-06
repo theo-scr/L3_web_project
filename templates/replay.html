@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Replay</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}" />
+	</head>
+
+
+	<body>
+
+  		<!-- Header -->
+		<header id="header">
+			<img src="/static/img/logo.png" alt="Logo du site"/>
+		</header>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
+	
+					<!-- Banner -->
+					<section id="banner">
+						<div class="content">
+							<header>
+								<h1> Replay de votre partie </h1>
+							</header>
+							<p> Une fois que vous aurez appuyé sur le bouton "play", l'ordinateur rejouera automatiquement vos coups les uns après les autres. </p>
+						</div>
+					</section>
+					<div id="partie">
+						<!-- Grille -->
+						<div id="grid" class="center">
+							{{content}}
+						</div>
+
+						<!-- Representation -->
+						<div id="repr" class="center">
+							{{content2}}
+						</div>	
+
+						<!-- Messages -->
+						<div class="center">
+							<span id="message_repr">Voici la figure que vous deviez réaliser</span>
+							<span id="message_erreur">VALIDATION incorrecte.</span>
+							<span id="message_aide">Demande d'AIDE.</span>
+						</div>
+
+						<!-- Button play -->
+						<div class="center">
+							<button name="play" id="play">Play</button>
+						</div>	
+					</div>			
+				</div>
+			</div>
+
+			
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<div class="inner">
+				
+					<!-- Section -->
+					<section>
+						<header class="major">
+							<h2>A propos</h2>
+						</header>
+						<aside>	<em> Projet L3 SID. </em> <br/>
+						L'<em>objectif</em> était de réaliser un site web en manipulant des données stockées dans une base de données Oracle. <br/>
+						<em>Sujet</em>: PIXEL Factory. <br/>
+						<em>Outils:</em> 
+							<ul>
+								<li>SGBD : Oracle</li>
+								<li>Serveur Python Flask</li>
+								<li>Langage côté serveur: Python - API Flask</li>
+								<li>Langage côté client: Javascript (ES5), HTML 5, CSS</li>
+								<li>Librairie Javascript: JQuery</li>
+								<li>Navigateur: Firefox</li>
+							</ul>
+						</aside>
+					</section>
+			
+			
+					<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Untitled. All rights reserved. Théo Saccareau & Stévan Scricot. </p>
+					</footer>
+				
+				</div>
+			</div>
+		</div>
+
+		<!-- Scripts -->
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+			<script src="{{ url_for('static', filename='js/script_replay.js')}}"></script> 
+	</body>
+</html> 
+

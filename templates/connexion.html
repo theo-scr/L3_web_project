@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Connexion</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}" />
+	</head>
+
+	<body>
+
+  		<!-- Header -->
+		<header id="header">
+			<img src="/static/img/logo.png" alt="Logo du site"/>
+		</header>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+			<!-- Main -->
+			<div id="main">
+				<div class="inner2">
+						
+					<!-- Section -->
+					<section>
+						<header class="major2">
+							<h3>Bienvenue sur Pixel Factory</h3>
+						</header>
+						<form method="get" >
+							<h4>Ravie de vous revoir ! </h4>
+							<label for="pseudo">Votre pseudo :</label><br/>
+							<input type="text" id="pseudo" name="pseudo" maxlength="20" required />
+							<span class="message_erreur"> {{content1}} </span>
+						  
+							<br/>
+						  
+							<label for="pass">Votre mot de passe :</label><br/>
+							<input type="password" id="pass" name="pass" maxlength="20" required />
+							<span class="message_erreur"> {{content2}} </span>
+						  
+							<br/>
+							<br/>
+						  
+							<input type="submit" value="Se connecter">
+						</form>
+						<p class="text_black"> Vous souhaitez finalement vous créez un compte ?</p>
+						<button name="index" onclick="self.location.href='/nvjoueur'"> Créer un compte </button>
+					</section>      
+				</div>
+			</div>
+		</div>
+	</body>
+</html> 
+
